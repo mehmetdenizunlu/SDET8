@@ -1,0 +1,46 @@
+<html>
+  <head> 
+    <title>Form</title>
+    <meta charset="UTF-8">
+  </head>
+
+
+  <body bgcolor="#add8e6">
+
+<img src="logo.png" width="100"/>
+<br>
+<br>
+<form>  <!-- form tag inin arasındaki elemanların bilgileri gider  --> 
+  kullanici adı : <input id="username" type="text"></input><br>
+  Şifre : <input id="password" type="text"></input><br>
+  Açıklama: <textarea rows="6" cols="20"></textarea><br>
+
+<div id="genelBilgi" style="color:blue; background-color: orange">
+ <!-- div: içindeki elemanları grupladı -->
+
+  Ehliyet ? : <input type="checkbox"></input><br>
+  Cinsiyet  : E<input name="cinsiyet" type="radio"></input>
+              K<input name="cinsiyet" type="radio"></input>
+
+  <br> 
+  Eğitim Durumu:
+     <select>
+       <option>Seçiniz...</option>
+       <option>Üniversite</option>
+       <option>Lise</option> 
+       <option>İlkokul</option>
+     </select>
+</div>
+ 
+ <br> 
+ <br><input type="file" id="myFile"/> <!-- dosya yükleme elemanı --> 
+ <br> 
+ <br><input type="button" value="Kaydet"/>
+
+ <br> 
+ <br><input type="submit" value="Kaydet"/>
+<br> Su anda <span style="color:red">FORM elemanlarını</span> gördük
+</form>
+  </body>
+  
+</html>
