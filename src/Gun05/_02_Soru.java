@@ -1,6 +1,7 @@
 package Gun05;
 
 import Utlity.BaseDriver;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -30,6 +31,16 @@ public class _02_Soru extends BaseDriver {
 
         WebElement tesekkurYazisi=driver.findElement(By.className("thankyou-main-text"));
         System.out.println("tesekkurYazisi.getText() = " + tesekkurYazisi.getText());
+
+//        if (tesekkurYazisi.getText().contains("Thank You..."))
+//            System.out.println("Test passed");
+//        else
+//            System.out.println("Test failed");
+
+        Assert.assertTrue("Aranılan mesaj bulunamadı", tesekkurYazisi.getText().contains("Thank"));
+       //Ben true bekliyorum, değilse göster, yoksa test passed
+
+        //Assert.assertTrue("Aranılan mesaj bulunamadı", tesekkurYazisi.getText().equals("Thank You!"));
 
         BekleKapat();
     }
