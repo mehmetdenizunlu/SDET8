@@ -8,6 +8,7 @@ import java.time.Duration;
 public class BaseDriver {
     public static WebDriver driver;
 
+    //bunun sarti extends olmasi ve basta yer almasi
     static{
         driver=new ChromeDriver();
 
