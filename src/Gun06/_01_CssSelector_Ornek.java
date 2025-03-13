@@ -1,4 +1,4 @@
-package Gun05;
+package Gun06;
 
 import Utlity.BaseDriver;
 import org.junit.Assert;
@@ -6,13 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class _04_Soru extends BaseDriver {
-    // Senaryo:
-    // 1-  https://qa-practice.netlify.app/auth_ecommerce  sayfasınız açınız
-    // 2-  Email kutucuğuna "admin@admin.com" i yaziniz
-    // 3-  Password kutucuğuna "admin123" yazdırınız
-    // 4-  Submit butona tıklatınız (click)
-    // 5-  Açılan yeni sayfada "SHOPPING CART" yazısının göründüğünü Assert ile doğrulayınız
+public class _01_CssSelector_Ornek extends BaseDriver {
 
     @Test
     public void Test1()
