@@ -13,16 +13,16 @@ public class _01_CssSelector_Ornek extends BaseDriver {
     {
         driver.get("https://qa-practice.netlify.app/auth_ecommerce");
 
-        WebElement email=driver.findElement(By.id("email"));
+        WebElement email=driver.findElement(By.cssSelector("input[type='email']"));
         email.sendKeys("admin@admin.com");
 
-        WebElement password=driver.findElement(By.id("password"));
+        WebElement password=driver.findElement(By.cssSelector("input[type='password']"));
         password.sendKeys("admin123");
 
-        WebElement submit=driver.findElement(By.id("submitLoginBtn"));
+        WebElement submit=driver.findElement(By.cssSelector("button[type='submit'][test-data='submitBtn']"));
         submit.click();
 
-        WebElement shoppingCartMesaj=driver.findElement(By.className("section-header"));
+        WebElement shoppingCartMesaj=driver.findElement(By.cssSelector("h2[class='section-header']"));
 
         Assert.assertTrue("Aranan mesaj bulunamadı", shoppingCartMesaj.getText().contains("SHOPPING CART"));
 
