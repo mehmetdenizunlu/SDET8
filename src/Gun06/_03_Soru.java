@@ -2,6 +2,7 @@ package Gun06;
 
 import Utlity.BaseDriver;
 import Utlity.MyFunc;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -56,7 +57,6 @@ public class _03_Soru extends BaseDriver {
         option3.click();
         goodRadio.click();
         MyFunc.Bekle(2);
-
 
         BekleKapat();
     }
