@@ -27,7 +27,6 @@ public class _03_ActionTusKontrolSendKeys extends BaseDriver {
                 .build()              // aksiyonu hazırla
                 .perform();           // işlemi gerçekleştir.
 
-
         BekleKapat();
     }
 
