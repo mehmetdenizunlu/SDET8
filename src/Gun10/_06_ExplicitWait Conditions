@@ -18,3 +18,14 @@ ExplicitExpectedConditions
 .numberOfElementsToBeMoreThan -> verilen locatora sahip elemanların sayısı verilenden fazla olana kadar bekle
 .elementStaleness -> verilen element bayatlaması geçene kadar bekle
 .attributeToBe(By locator, String attribute, String value) –> Nitelik (Attribute) olarak belirli bir değere sahip WebElement’in olması koşulu.
+
+
+/*
+   Interview Sorusu : ImlicitlyWait ile ExplicitWait arasında ne fark vardır
+
+   Implicitly : Bütün elementler için kullanılır.1 kere yazılır ve HTML de ilgili locator
+                var mı ? (findElement/s bunda çalışır)
+
+   Explicit   : Elemente özeldir. Element için verilen kriterin kontrolü için mühlet, süre.
+
+ */
