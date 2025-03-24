@@ -30,7 +30,6 @@ public class _02_ActionMouseWheel extends BaseDriver {
         driver.get("https://www.selenium.dev/selenium/web/scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html");
         MyFunc.Bekle(3);
 
-        WebElement iframe = driver.findElement(By.name("nested_scrolling_frame"));
         // belli bir miktar pixel kadar scroll
         new Actions(driver)
                 .scrollByAmount(0,500)  // yatay scroll miktarı, dikey scroll miktarı

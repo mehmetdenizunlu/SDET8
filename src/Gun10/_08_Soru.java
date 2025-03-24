@@ -42,9 +42,6 @@ public class _08_Soru extends BaseDriver {
             WebElement answerField = driver.findElement(By.id("numberAnswerField"));
             WebElement clearButton = driver.findElement(By.id("clearButton"));
 
-            txtBox1.clear();
-            txtBox2.clear();
-
             txtBox1.sendKeys(String.valueOf(sayi1));
             txtBox2.sendKeys(String.valueOf(sayi2));
 
@@ -58,6 +55,8 @@ public class _08_Soru extends BaseDriver {
             int olusanToplam = Integer.parseInt(answerField.getAttribute("value"));
             Assert.assertTrue("Toplam hatalı", beklenenToplam == olusanToplam);
 
+            txtBox1.clear();
+            txtBox2.clear();
             clearButton.click();
         }
 
