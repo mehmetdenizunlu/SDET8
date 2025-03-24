@@ -27,10 +27,10 @@ public class _02_Soru extends BaseDriver {
         WebElement ciftFrameLink= driver.findElement(By.xpath("//a[@href='#Multiple']"));
         ciftFrameLink.click();
 
-        WebElement iframe1=driver.findElement(By.xpath("//div[@id='Multiple']/iframe"));
+        WebElement iframe1=driver.findElement(By.xpath("//div[@id='Multiple']/iframe")); // prent iframe
         driver.switchTo().frame(iframe1);
 
-        driver.switchTo().frame(0);  // iframe isimli frame in içind etek iframe geçilmiş olur
+        driver.switchTo().frame(0);  // iframe isimli frame in içindeki ilk iframe geçilmiş olur
         // şu anda en içteki iframe deyim.
 
         WebElement yaziKutusu=driver.findElement(By.xpath("//input[@type='text']"));
