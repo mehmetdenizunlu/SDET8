@@ -20,7 +20,6 @@ public class _06_ScrollToWebElement extends BaseDriver {
 
         js.executeScript("arguments[0].scrollIntoView();", iframe); // elemente kadar kaydır
 
-
         BekleKapat();
     }
 }
