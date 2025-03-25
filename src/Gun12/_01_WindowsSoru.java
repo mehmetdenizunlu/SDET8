@@ -31,8 +31,10 @@ public class _01_WindowsSoru extends BaseDriver {
         JavascriptExecutor js=(JavascriptExecutor)driver;
 
         List<WebElement> linkler=driver.findElements(By.cssSelector("a[target='_blank']"));
-        for(WebElement e: linkler)
+        for(WebElement e: linkler) {
+            if (e.getAttribute("href").contains("mail")) continue;
             js.executeScript("arguments[0].click();", e);
+        }
 
         Set<String> windowsIDler= driver.getWindowHandles();
         for (String id: windowsIDler)
