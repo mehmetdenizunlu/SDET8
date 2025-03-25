@@ -11,7 +11,7 @@ public class _04_RobotFileUpload extends BaseDriver {
 
     @Test
     public void Test1() throws AWTException {
-        driver.get("https://demo.guru99.com/test/upload/");
+        driver.get("https://letcode.in/file");
         MyFunc.Bekle(2);
 
         Robot rbt=new Robot();
