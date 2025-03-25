@@ -12,6 +12,8 @@ import java.util.Set;
 
 public class _08_WindowsGiris extends BaseDriver {
 
+    // driver.quit();  // bütün açılmış windowları kapatır
+    // driver.close(); // sadece bulunduğun window u kapatır.
 
     @Test
     public void Test1()

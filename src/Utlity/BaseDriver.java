@@ -20,7 +20,7 @@ public class BaseDriver {
 
     public static void BekleKapat(){
         MyFunc.Bekle(3);
-        driver.quit();
+        driver.quit();  // bütün açılmış windowları kapatır
     }
 
     public static void KalanOncekileriKapat() {
