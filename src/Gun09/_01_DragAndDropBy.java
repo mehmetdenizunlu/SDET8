@@ -36,6 +36,7 @@ public class _01_DragAndDropBy extends BaseDriver {
 //        (genislik/500)*200  -> sol sürgü için verilecek miktar
         // isteyen de mediamarket dekileri yapsın
 
+
     }
 
 }

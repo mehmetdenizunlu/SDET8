@@ -28,15 +28,16 @@ public class _01_EkranKaydet extends BaseDriver {
         List<WebElement> errorMsg=driver.findElements(By.xpath("//*[text()='Invalid credentials']"));
         if (errorMsg.size()>0) // hata mesajı çıkmış semektir
         {
-            System.out.println("Hata oldu");
+            System.out.println("Hata oldu, ekran görüntüsünü alıyoruz");
             //ekran kaydını al
 
             TakesScreenshot ts=(TakesScreenshot)driver;
             File hafizadaDosyaHalinde =ts.getScreenshotAs(OutputType.FILE); // ekran kaydı aldı dosya tipi şeklinde
 
             // hafızadaki bu ekran görüntüsünü, fiziksel bir dosyaya yaz dememiz lazım
-            FileUtils.copyFile(hafizadaDosyaHalinde, new File("ekranGoruntuleri\\screenshot.jpg"));
+            FileUtils.copyFile(hafizadaDosyaHalinde, new File("ekranGoruntuleri/screenshot.jpg"));  // mac / olmalı
 
+            // TODO :  Öyle bir şey yapınki her ekran kaydı , AYRI AYRI kaydedilsin. 2025_03_26_13_56
         }
 
         BekleKapat();
