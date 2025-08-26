@@ -2,7 +2,7 @@ package Utlity;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.Dimension;
 import java.time.Duration;
 
 public class BaseDriver {
@@ -13,7 +13,7 @@ public class BaseDriver {
         KalanOncekileriKapat();
         driver=new ChromeDriver();
 
-        driver.manage().window().maximize(); // Ekranı max yapıyor.
+        driver.manage().window().maximize(); // Windows Ekranı max yapıyor.
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // 20 sn mühlet: sayfayı yükleme mühlet
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // 5 sn mühlet: elementi bulma mühleti
     }

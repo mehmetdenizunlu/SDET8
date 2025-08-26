@@ -1,4 +1,4 @@
-package Gün04;
+package Gun04;
 
 import Utlity.MyFunc;
 import org.openqa.selenium.By;
