@@ -14,6 +14,7 @@ public class BaseDriver {
         driver=new ChromeDriver();
 
         driver.manage().window().maximize(); // Windows Ekranı max yapıyor.
+        driver.manage().window().fullscreen();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // 20 sn mühlet: sayfayı yükleme mühlet
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // 5 sn mühlet: elementi bulma mühleti
     }
